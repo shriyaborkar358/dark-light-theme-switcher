@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark-Light-theme-Switcher</title>
+    <style>
+        .btn-container {
+            width: 50px;
+            display: flex;
+        }
+
+        .img-theme {
+            height: 40px;
+            padding: 5px;
+            border-radius: 5px;
+            margin: 0 3px;
+            background-color: #fff;
+        }
+
+        .theme-dark {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .theme-Light {
+            background-color: #ffffff;
+            color: #000;
+        }
+
+        .description {
+            text-align: center;
+            padding: 0 300px;
+            font-family: cursive;
+        }
+
+        .mode-info{
+            font-size: 20px;
+            font-family: cursive;
+        }
+    </style>
+</head>
+
+<body id="body">
+
+    <div class="btn-container">
+        <img src="dark.png" alt="Dark-theme" class="img-theme " onclick="darkMode()" id="dark" />
+        <img src="light.png" alt="Light-theme" class="img-theme " onclick="lightMode()" id="light" />
+    </div>
+
+    <div class="description">
+        <h1>Dark-Light Theme Switcher</h1>
+
+        <h2>Dark Mode</h2>
+
+        <p class="mode-info">Dark Mode is a systemwide appearance setting that uses a dark color palette to provide a comfortable viewing
+            experience tailored for low-light environments. The color palette in Dark Mode includes dimmer background
+            colors and brighter foreground colors. It's important to realize that these colors aren't necessarily
+            inversions of their light counterparts.</p>
+
+        <h2>Light Mode</h2>
+
+        <p class="mode-info">Light mode refers to the default setting on most devices where the background is light, usually white, and
+            the text is dark. On the contrary, dark mode flips this design, offering a dark background, often black or
+            dark gray, with light text.
+        </p>
+    </div>
+</body>
+
+</html>
